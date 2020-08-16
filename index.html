@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter | 101</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- cutom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- custom JS -->
+    <script type="text/javascript" src="/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container container-fluid">
+        <div id="main-container" class="jumbotron jumbotron-fluid">
+            <form id="myForm" class="form">
+                <h1 id="header">Timer</h1>
+                <h1 id="mylocalTime" style="color: white; font-style: italic">localTime</h1>
+                <hr id="drowLine">
+
+                <div id="inputGroup" class="row">
+                    <button id="startButton" class="btn btn-success" name="myButton" type="button" onclick="counting();">
+                        Start-Counter 
+                        <input id="startValue" type="number"> 
+                    </button>
+
+                    <div id="limitCup" class="col-2">
+                        <p id="innerValue">___<i class="fas fa-stopwatch-20"></i></p>
+                    </div>
+                    <button name="submit" id="stopButton" type="button" class="btn btn-danger" onclick="clearCounter();">
+                        Clear-Counter 
+                    </button><br><br>
+                </div>
+                <h3 id="errors" class="lead"></h3>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
